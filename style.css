@@ -31,7 +31,6 @@
     position: relative;
     top: 0;
     left: 0;
-    z-index: -1;
 }
 
 .header-container {
@@ -45,13 +44,12 @@
 .header::after {
     content: '';
     background-color: rgb(0, 0, 0);
-    opacity: 0.7;
+    opacity: 0.6;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
 }
 
 .header-content {
@@ -140,13 +138,15 @@
 }
 
 .article-image {
-    width: 380px; 
+    width: 380px;
+    height: 100%;
     margin-top: 15px;
     /* border: 1px solid grey; */
 }
 
 .article-tags {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
     padding-top: 0;
     margin: 0;
@@ -158,7 +158,7 @@
 
 .article-tag {
 
-    color: #b59f5b;
+    color: rgb(181, 159, 91);
     font-size: 14px;
     font-weight: bold;
     margin: 0;
@@ -181,7 +181,7 @@
     display: flex;
     /* border: 1px solid grey; */
     font-size: 12px;
-    color: #888888;
+    color: rgb(135, 135, 135);
     margin-top: 24px;
 }
 
@@ -230,7 +230,7 @@
 .aside-heading:before {
     content: '';
     box-sizing: content-box;
-    background-color: #b59f5b;;
+    background-color: rgb(225, 217, 189);
     width: 65px;
     height: 3px;
     position: absolute;
@@ -254,6 +254,7 @@
 
 .news-image {
     padding-top: 5px;
+    width: 70px;
     /* border: 1px solid black; */
 }
 
@@ -266,7 +267,7 @@
 
 .news-date {
     font-size: 12px;
-    color: #888888;
+    color: rgb(135, 135, 135);
 }
 
 .news-heading {
@@ -279,16 +280,12 @@
 .search-group {
     margin-top: 63px;
      /* border: 1px solid black; */
-     margin-bottom: 0px;
-
-}
-
-.news-search {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 50px;
 }
+
 
 .search-row {
     display: block;
@@ -298,8 +295,14 @@
     padding-right: 17px;
     background-color: #f4f7f6;
     border: 0;
+    color: rgb(112, 113, 113);
+    cursor: pointer;
 }
 
+.search-row:focus {
+    outline: 1px solid rgb(197, 201, 201);
+    outline-offset: -1px;
+}
 
 .search-button {
     display: block;
@@ -310,10 +313,12 @@
     background-size: 40%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #b59f5b;
+    background-color: rgb(181, 159, 91);
     border: 0;
     text-align: center;
     padding-top: 15px;
+
+    cursor: pointer;
 }
 
 
@@ -330,6 +335,13 @@
     padding-right: 17px;
     background-color: #f4f7f6;
     border: 0;
+    color: rgb(112, 113, 113);
+    cursor: pointer;
+}
+
+.subscribe-row:focus {
+    outline: 1px solid rgb(197, 201, 201);
+    outline-offset: -1px;
 }
 
 .subscribe-button {
@@ -340,10 +352,12 @@
     height: 48px;
     width: 270px;
     color: white;
-    background-color: #b59f5b;
+    background-color: rgb(181, 159, 91);
     border: 0;
     font-weight: bold;
     text-transform: uppercase;
+
+    cursor: pointer;
 }
 
 .aside-tags {
@@ -378,7 +392,7 @@
 }
 
 .aside-topic {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(237, 237, 237);
     height: 47px;
     display: flex;
     align-items: center;
@@ -391,7 +405,7 @@
 
 
 .topic-number {
-    color:#b59f5b;
+    color: rgb(181, 159, 91);
     font-weight: bold;
     font-size: 12px;
     padding-bottom: 5px;
@@ -407,7 +421,7 @@
 .socials {
     display: flex;
     padding: 30px 0;
-    background-color: grey;
+    background-color: rgb(244, 247, 246);
     justify-content: center;
 }
 
@@ -457,4 +471,5 @@
     padding-left: 6px;
     font-size: 12px;
     font-weight: 700;
+    color: rgb(173, 173, 173);
 }

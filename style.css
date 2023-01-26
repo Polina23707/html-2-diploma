@@ -365,7 +365,7 @@
 
 .aside-tag {
     box-sizing: content-box;
-    border: 3px solid grey;
+    border: 3px solid rgb(237,237,237);
     color: black;
     text-transform: uppercase;
     font-weight: bold;

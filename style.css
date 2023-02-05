@@ -118,23 +118,29 @@
 .article {
     display: flex;
     width: 780px;
-    margin-top: 45px;
+    margin-top: 43px;
 }
 
 .first-article {
     margin-top: 0;
 }
 
-.article-content {
-    margin-left: 30px;
-    font-size: 15px;
-    margin-top: 10px;
+.article-image-container {
+    width: 380px;
+    height: 310px;
+    box-sizing: border-box;
 }
 
 .article-image {
     width: 380px;
-    height: 100%;
-    margin-top: 15px;
+    height: 308px;
+    padding-top: 15px;
+}
+
+.article-content {
+    margin-left: 30px;
+    font-size: 15px;
+    padding-top: 10px;
 }
 
 .article-tags {
@@ -188,7 +194,6 @@
 
 .article-info-autor {
     color: black;
-    font-weight: bold;
     margin-left: 12px;
 }
 
@@ -204,17 +209,17 @@
     box-sizing: border-box;
 }
 
-.aside-section {
+/* .aside-section {
     display: flex;
     flex-direction: column;
     margin: 0;
-}
+} */
 
 .aside-heading {
     text-align: center;
     text-transform: uppercase;
     margin-top: 8px;
-    padding-left: 2px;
+    /* padding-left: 2px; */
     font-size: 14px;
     position: relative;
 }
@@ -232,7 +237,7 @@
 
 .news-container {
     display: flex;
-    margin-top: 16px;
+    margin-top: 12px;
     padding: 0;
     box-sizing: content-box;
 }
@@ -241,9 +246,16 @@
     margin: 37px 0 0;
 }
 
+.news-image-container {
+    width: 70px;
+    height: 80px;
+    box-sizing: border-box;
+}
+
 .news-image {
     padding-top: 5px;
     width: 70px;
+    height: 75px;
 }
 
 .news-text {
@@ -267,13 +279,17 @@
 }
 
 .search-group {
-    margin-top: 63px;
+    margin-top: 56px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 50px;
 }
 
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
 
 .search-row {
     display: block;
@@ -309,8 +325,9 @@
 }
 
 .search-button:hover {
-    background-color: rgb(50,50,50);
+    background-color: rgb(50, 50, 50);
 }
+
 .subscribe-group {
     margin-top: 35px;
     margin-bottom: 45px;
@@ -349,7 +366,7 @@
 }
 
 .subscribe-button:hover {
-    background-color: rgb(50,50,50);
+    background-color: rgb(50, 50, 50);
 }
 
 .aside-tags {
@@ -365,7 +382,7 @@
 
 .aside-tag {
     box-sizing: content-box;
-    border: 3px solid rgb(237,237,237);
+    border: 3px solid rgb(237, 237, 237);
     color: black;
     text-transform: uppercase;
     font-weight: bold;
@@ -399,7 +416,7 @@
 }
 
 .aside-topic:hover {
-    color:rgb(181, 159, 91);
+    color: rgb(181, 159, 91);
 }
 
 
